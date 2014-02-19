@@ -32,7 +32,7 @@
 						} else if (currentLocation === "theLab") {
 							currentLocation = "tardis"
 						} else {
-							document.write("You can't go that way.");
+							var msg = ("You can't go that way.");
 						}
 						break;
 					case ('South'):
@@ -41,7 +41,7 @@
 						} else if (currentLocation === "theLab") {
 							currentLocation = "dungeon"
 						} else {
-							document.write("You can't go that way.");
+							var msg = ("You can't go that way.");
 						}
 						break;
 					case ('East'):
@@ -50,6 +50,9 @@
 						break;
 					default: alert("Internal Error!  Unknown Direction: " + dir + ".");
 				}
+				var taPtr = document.getElementById("taDisplay");
+				var history = taPtr.value;
+				taPtr.value = msg + "\n" + history;
 				if (currentLocation != before) {
 					updateDisplay();
 				}
