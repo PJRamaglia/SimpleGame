@@ -15,7 +15,7 @@
 						break;
 					case "dungeon": var msg = "Pit of Despair";
 						break;
-					default       : var msg = "You can't go that way.";
+					default       : var msg = "currentLocation matches no cases";
 				}
 				var taPtr = document.getElementById("taDisplay");
 				var history = taPtr.value;
@@ -32,7 +32,7 @@
 						} else if (currentLocation === "theLab") {
 							currentLocation = "tardis"
 						} else {
-							currentLocation = -1
+							document.write("You can't go that way.");
 						}
 						break;
 					case ('South'):
@@ -41,7 +41,7 @@
 						} else if (currentLocation === "theLab") {
 							currentLocation = "dungeon"
 						} else {
-							currentLocation = -1
+							document.write("You can't go that way.");
 						}
 						break;
 					case ('East'):
