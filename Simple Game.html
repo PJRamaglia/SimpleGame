@@ -3,14 +3,14 @@
 	<head>
 		<title>My Simple Game</title>
 		<style type="text/css"> <!-- http://learnertobeginner.blogspot.com/search?q=command+prompt -->
-			.console {
+			* {
 				font-family:Terminal;
 				color: #C0C0C0;
 				background: #000000;
 				border: 3px double #CCCCCC;
 				padding: 10px;
 			}
-		</style>
+		</style> <!-- This should display the entire game as if running from a command prompt. -->
 		<script>
 			//Global Variables
 			var currentLocation = "theLab";
@@ -66,7 +66,7 @@
 			}
 		</script>
 	</head>
-	<body class="console" onload="updateDisplay();"> <!-- This should display the entire game as if running from a command prompt. -->
+	<body onload="updateDisplay();">
 
 		<h2>Simple Game</h2>
 		<textarea id="taDisplay" style="width:800px; height:600px;">Welcome to The Lab.</textarea>
