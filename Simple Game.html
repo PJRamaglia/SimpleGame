@@ -2,15 +2,6 @@
 <html>
 	<head>
 		<title>My Simple Game</title>
-		<style type="text/css"> <!-- http://learnertobeginner.blogspot.com/search?q=command+prompt -->
-			* {
-				font-family: Terminal;
-				color: #C0C0C0;
-				background: #000000;
-				border: 3px double #CCCCCC;
-				padding: 10px;
-			}
-		</style> <!-- This should display the entire game as if running from a command prompt. -->
 		<script>
 			//Global Variables
 			var currentLocation = "theLab";
@@ -68,7 +59,7 @@
 	</head>
 	<body onload="updateDisplay();">
 		<h2>Simple Game</h2>
-		<textarea id="taDisplay" style="width:800px; height:600px;">Welcome to The Lab.</textarea>
+		<textarea id="taDisplay" style="width:640px; height:480px; font-family:Terminal; color:#C0C0C0; background:#000000;">Welcome to The Lab.</textarea> <!-- This should display the entire game as if running from a command prompt. -->
 		<br>
 		<input type="button" value="North" onclick="go('North');">
 		<input type="button" value="South" onclick="go('South');">
