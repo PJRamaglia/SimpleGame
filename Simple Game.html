@@ -24,6 +24,7 @@
 			
 			function go(dir) {
 				var before = currentLocation;
+				var msg = "";
 				switch(dir) {
 					case ('North'):
 						if (currentLocation === "dungeon") {
@@ -31,8 +32,7 @@
 						} else if (currentLocation === "theLab") {
 							currentLocation = "tardis"
 						} else {
-							//TODO: Fix this.
-							alert("You can't go that way.");
+							var msg = "You can't go that way.";
 						}
 						break;
 					case ('South'):
